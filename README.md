@@ -44,9 +44,7 @@ Instead:
 At the time of writing local lambda runtimes are limited and usually not worth the time anyway.
 
 ```bash
-docker build . -f docker/test.dockerfile -t test && docker image rm test
+docker build . -f docker/test.dockerfile -t test && docker run --rm test
 ```
-
-:rocket: If the image builds your tests worked!
 
 Good luck!
