@@ -13,5 +13,5 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 RUN uv pip install -r requirements.txt
 
-RUN pytest
+ENTRYPOINT ["bash", "../entrypoint-tests.sh"]
 
